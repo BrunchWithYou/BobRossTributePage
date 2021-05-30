@@ -1,9 +1,27 @@
 body{
-  background-color: rgb(230, 255, 204);
+  background-color: #ecf9ec;
+  font-family: Tahoma,Verdana,Segoe,sans-serif;
+
 }
 
-.img-div{
+body{
   max-width: 100%;
   height: auto;
   text-align: center;
+}
+
+img{
+  max-width:100%;
+  display: block;
+  margin: auto;
+}
+
+#image{
+  border-radius: 100%;
+  border: 3px solid gray;
+  height: auto;
+  width: 300px;
+}
+ul{
+  list-style-position: inside;
 }
