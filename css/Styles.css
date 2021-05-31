@@ -1,22 +1,23 @@
 /* this is to make background fill all the way down, without it we will have a cutout*/
+*{
+  margin: 0;
+  padding: 0;
+}
+
 html, body {
     height: 100%;
 }
-/* background color and gradient*/
+/* background centering, color, and gradient*/
 body{
-  background-image: repeating-linear-gradient(45deg, #ecf9ec, #64B8DB, white);
+  background-color: #e5eeea;
   font-family: Tahoma,Verdana,Segoe,sans-serif;
-  height: 100%;
-  color: #474f66;
-}
-/*centering*/
-body{
-  max-width: 100%;
   height: auto;
+  color: #474f66;
   text-align: center;
+
 }
 /*custom cursor hover*/
-img{
+#image{
   max-width:100%;
   display: block;
   margin: auto;
@@ -24,6 +25,9 @@ img{
 }
 img:hover{
   box-shadow:0 10px 16px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+}
+q{
+  padding: 50px;
 }
 
 #image{
@@ -37,14 +41,40 @@ ul{
     display: inline-block;
     text-align: left;
 }
+.gallery{
+
+  list-style: none;
+  display: flex;
+
+}
+.artwork-container{
+  height: auto;
+  width: 200px;
+
+
+}
+.paintings{
+  list-style: none;
+  box-shadow: 2px 2px 2px 2px rgba(0,0,0,0.7);
+  transition-duration: .3s;
+  padding:5px;
+  border-radius: 5%;
+  border-color: black;
+
+
+}
+.paintings:hover {
+ transform: scale(1.05, 1.05);
+}
 
 #img-caption{
   font-style: italic;
 }
 
-#tribute-link:hover{
-  color: blue;
+.link:hover{
+  color: black;
 }
+
 
 /*code below copied from some dude on internet to test effect*/
 
