@@ -1,28 +1,30 @@
-body{
-  background-color: #ecf9ec;
-  font-family: Tahoma,Verdana,Segoe,sans-serif;
-
+/* this is to make background fill all the way down, without it we will have a cutout*/
+html, body {
+    height: 100%;
 }
-
+/* background color and gradient*/
+body{
+  background-image: repeating-linear-gradient(45deg, #ecf9ec, #64B8DB, white);
+  font-family: Tahoma,Verdana,Segoe,sans-serif;
+  height: 100%;
+  color: #474f66;
+}
+/*centering*/
 body{
   max-width: 100%;
   height: auto;
   text-align: center;
 }
-
+/*custom cursor hover*/
 img{
   max-width:100%;
   display: block;
   margin: auto;
   cursor: url("https://th.bing.com/th?q=Pouring+One+Out&w=120&h=120&c=1&rs=1&qlt=90&cb=1&pid=InlineBlock&mkt=en-US&adlt=moderate&t=1&mw=247"), auto;
 }
-
 img:hover{
   box-shadow:0 10px 16px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
-
-
 }
-
 
 #image{
   border-radius: 100%;
@@ -30,8 +32,10 @@ img:hover{
   height: auto;
   width: 300px;
 }
+/*bullet points centered with text*/
 ul{
-  list-style-position: inside;
+    display: inline-block;
+    text-align: left;
 }
 
 #img-caption{
